@@ -13,3 +13,5 @@ docker run -e REDIS_PASSWORD=<password> -p 6379:6379 --name redis -d -v <local-f
 
 The application uses a custom config class to load the connection details from the application.yml file
 the Redis and SQL Server beans have been given a custom name
+
+this is not using a ORM, the sample uses a JDBC template to run a query and map the rows to an object
